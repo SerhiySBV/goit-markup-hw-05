@@ -37,7 +37,9 @@
         >
         <nav class="nav">
           <ul class="list nav-list">
-            <li class="nav-curent"><a class="link nav-link nav-link-current" href="./index.html">Студія</a></li>
+            <li class="nav-curent">
+              <a class="link nav-link nav-link-current" href="./index.html">Студія</a>
+            </li>
             <li><a class="link nav-link nav-link" href="./portfolio.html">Портфоліо</a></li>
             <li><a class="link nav-link" href="">Контакти</a></li>
           </ul>
@@ -70,7 +72,15 @@
       <section class="overlay main-section">
         <div class="conteiner">
           <h1 class="main-text">Ефективні рішення для вашого бізнесу</h1>
-          <button class="btn btn-mode-blue" type="button">Замовити послугу</button>
+
+          <!-- Modal -->
+
+          <div data-modal class="backdrop is-hidden">
+            <div class="modal">
+              <button data-modal-close>Закрити</button>
+            </div>
+          </div>
+          <button data-modal-open class="btn btn-mode-blue" type="button">Замовити послугу</button>
         </div>
       </section>
 
@@ -110,18 +120,21 @@
 
       <!--Specification-->
 
-      <section class="Specification">
+      <section class="pecification-text">
         <div class="conteiner">
-          <h2 class="Specification-title">Чим ми займаємося</h2>
-          <ul class="list Specification-list">
+          <h2 class="specification-title">Чим ми займаємося</h2>
+          <ul class="list specification-list">
             <li class="img specification-img">
               <img src="./images/pic1.jpg" alt="Фото1" width="370" height="294" />
+              <p class="specification-text">Десктопні додатки</p>
             </li>
             <li class="img specification-img">
               <img src="./images/pic2.jpg" alt="Фото2" width="370" height="294" />
+              <p class="specification-text">Мобільні додатки</p>
             </li>
             <li class="img specification-img">
               <img src="./images/pic3.jpg" alt="Фото3" width="370" height="294" />
+              <p class="specification-text">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -413,5 +426,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
